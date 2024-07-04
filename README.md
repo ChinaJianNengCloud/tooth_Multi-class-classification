@@ -48,3 +48,20 @@ Linux操作系统在local3上，环境名为zhujiaqia
 存在4种excle文件，每种excle文件可以用于4种实验(这四种就是4种需要跑的模型)，这四种excle分别是7类无数据增强，41类无数据增强，7类数据增强，41类无数据增强。
 
 所以在设置实验的时候需要仔细查看数据来源，excle和model是否设置的是你当前做的实验
+
+
+# 数据路径
+在local3节点中，准备上传百度网盘
+数据增强图片路径/home/user/yinda/zhujiaqian/densenetdataup/project/data/data
+
+无数据增强图片数据/home/user/yinda/zhujiaqian/data/data/teeth_png_zong
+
+无数据增强7类excle路径/home/user/yinda/zhujiaqian/excle3
+
+无数据增强41类excle路径/home/user/yinda/zhujiaqian/class41/dataexcle
+
+
+数据增强7类excle路径
+/home/user/yinda/zhujiaqian/densenetdataup/project/data/dataexcle/trian.xlsx
+Val路径/home/user/yinda/zhujiaqian/excle3/val.xlsx
+text路径/home/user/yinda/zhujiaqian/excle3/text.xlsx
