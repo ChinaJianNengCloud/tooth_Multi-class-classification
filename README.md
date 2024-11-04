@@ -7,17 +7,21 @@
 
 # 数据介绍
 7大类无数据增强和41小类无数据增强的pic
-J:\yinda\zhujiaxi\data\teeth_png_zong(准备上传百度网盘)
-一共有3818张
-数据增强之后一共11150
+
+原数据一共有3818张
+数据分割成3部分train2444  val611 test763 
 
 
+数据增强之后一共11150张
+数据分割成3部分train9776  val611 test763 
+
+针对train数据进行了3种增强，①旋转-5到5°，②水平翻转，③垂直翻转，目前train的数量为9776.
 
 其中训练集测试集验证集的划分是根据csv表格来的，即根据csv表格中的内容来确定哪些是训练集，测试集和验证集。
 
-# 已有环境
-Windows操作系统在local10的conda环境名为zhujiaqian。
-Linux操作系统在local3上，环境名为zhujiaqia
+
+# 环境
+见requestment.txt
 
 # 项目运行
 1.修改总分类图片路径，在mypath.py文件中，output_dir
@@ -51,16 +55,12 @@ Linux操作系统在local3上，环境名为zhujiaqia
 
 
 # 数据路径
-在local3节点中，准备上传百度网盘
-数据增强图片路径/home/user/yinda/zhujiaqian/densenetdataup/project/data/data
 
-无数据增强图片数据/home/user/yinda/zhujiaqian/data/data/teeth_png_zong
+数据增强图片路径 S:\baidu\sjwlab\chenyinda\project\牙齿多分类实验\data\dataup(11150).zip
 
-无数据增强7类excle路径/home/user/yinda/zhujiaqian/excle3
+无数据增强图片数据 S:\baidu\sjwlab\chenyinda\project\牙齿多分类实验\data\data(3818).zip
 
-无数据增强41类excle路径/home/user/yinda/zhujiaqian/class41/dataexcle
-
-
+excle数据包含了41类的数据增强和没有数据增强和7类数据增强和没有数据增强的excle数据 project\dataexcle
 数据增强7类excle路径
 /home/user/yinda/zhujiaqian/densenetdataup/project/data/dataexcle/trian.xlsx
 Val路径/home/user/yinda/zhujiaqian/excle3/val.xlsx
